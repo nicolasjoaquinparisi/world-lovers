@@ -74,3 +74,27 @@ exports.updateCountry = async (req, res) => {
         return res.status(500).send('There was an error')
     }
 }
+
+// Eliminar país
+exports.deleteCountry = async (req, res) => {
+    try {
+        // Extraer el id del país
+        const id = req.params.id
+
+        // Se verifica la existencia del país con el id recibido por parámetro
+        const country = await Country.findByPk(id)
+        if (!country) {
+            return res.status(404).send('Country not found')
+        }
+
+        // Faltan verificaciones por si el país está asociado a un estado
+
+        // Eliminar el país
+        await country.destroy()
+        res.status(200).send('Country deleted')
+
+    } catch (error) {
+        console.log(error)
+        return res.status(500).send('There was an error')
+    }
+}

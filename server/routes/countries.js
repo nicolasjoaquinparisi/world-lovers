@@ -3,8 +3,9 @@ const router = express.Router()
 const { check } = require('express-validator')
 const countryController = require('../controller/countryController')
 
+// Path: api/countries
+
 // Crear país
-// api/countries
 router.post('/',
     [
         check('name', 'The name of the country is required').not().isEmpty()
@@ -13,7 +14,6 @@ router.post('/',
 )
 
 // Obtener todos los países
-// api/countries
 router.get('/', countryController.getCountries)
 
 // Actualizar un país
@@ -23,5 +23,8 @@ router.put('/:id',
     ],
     countryController.updateCountry
 )
+
+// Eliminar país
+router.delete('/:id', countryController.deleteCountry)
 
 module.exports = router
