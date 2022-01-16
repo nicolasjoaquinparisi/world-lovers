@@ -16,4 +16,12 @@ router.post('/',
 // api/countries
 router.get('/', countryController.getCountries)
 
+// Actualizar un país
+router.put('/:id',
+    [
+        check('name', 'The name of the country is required').not().isEmpty()
+    ],
+    countryController.updateCountry
+)
+
 module.exports = router

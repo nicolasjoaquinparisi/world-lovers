@@ -40,3 +40,37 @@ exports.getCountries = async (req, res) => {
         return res.status(500).send('There was an error')
     }
 }
+
+// Actualizar país
+exports.updateCountry = async (req, res) => {
+
+    // Revisar si hay errores
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    try {
+        // Extraer nombre del pais
+        const { name } = req.body
+
+        // Obtener id de los parámetros
+        const id = req.params.id
+
+        // Verificar si existe el país con el id recibido como parámetro
+        const country = await Country.findByPk(id)
+        if (!country) {
+            return res.status(404).send('Country not found')
+        }
+
+        country.set({
+            name: name
+        })
+        await country.save()
+
+        res.status(200).send({country})
+    } catch (error) {
+        console.log(error)
+        return res.status(500).send('There was an error')
+    }
+}
