@@ -18,6 +18,7 @@ const PORT = process.env.PORT || 4000
 
 // Importar rutas
 app.use('/api/countries', require('./routes/countries'))
+app.use('/api/states', require('./routes/states'))
 
 // Página principal
 app.get('/', (req, res) => {
