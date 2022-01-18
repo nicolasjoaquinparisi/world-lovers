@@ -22,5 +22,4 @@ const City = sequelize.define('city', {
 City.belongsTo(State, { foreignKey: 'state_id', targetKey: 'id' })
 State.hasMany(City, { foreignKey: 'state_id'})
 
-
 module.exports = City

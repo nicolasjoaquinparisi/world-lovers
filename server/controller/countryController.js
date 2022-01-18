@@ -1,6 +1,6 @@
 const Country = require('../model/Country')
-const { validationResult } = require('express-validator');
-const State = require('../model/State');
+const { validationResult } = require('express-validator')
+const State = require('../model/State')
 
 // Crear nuevo país
 exports.createCountry = async (req, res) => {

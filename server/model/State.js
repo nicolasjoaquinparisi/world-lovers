@@ -22,5 +22,4 @@ const State = sequelize.define('state', {
 State.belongsTo(Country, { foreignKey: 'country_id', targetKey: 'id' })
 Country.hasMany(State, { foreignKey: 'country_id'})
 
-
 module.exports = State
