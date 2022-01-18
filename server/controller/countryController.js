@@ -1,5 +1,6 @@
 const Country = require('../model/Country')
-const { validationResult } = require('express-validator')
+const { validationResult } = require('express-validator');
+const State = require('../model/State');
 
 // Crear nuevo país
 exports.createCountry = async (req, res) => {
@@ -21,7 +22,7 @@ exports.createCountry = async (req, res) => {
             return res.status(400).send(`The country with name ${name} is alredy exists`)
         }
 
-        await Country.create({name})
+        const country = await Country.create({name})
         res.status(200).send(`New country added: ${name}`)
 
     } catch (error) {
@@ -33,7 +34,11 @@ exports.createCountry = async (req, res) => {
 // Obtener todos los países
 exports.getCountries = async (req, res) => {
     try {
-        const countries = await Country.findAll({attributes: { exclude: ['createdAt', 'updatedAt' ] }})
+        const countries = await Country.findAll({
+            attributes: { exclude: ['createdAt', 'updatedAt' ] },
+            include: { model: State, attributes: { exclude: ['createdAt', 'updatedAt', 'country_id'] } }
+        })
+
         res.json({countries})
     } catch (error) {
         console.log(error)

@@ -12,7 +12,6 @@ exports.createState = async (req, res) => {
     }
 
     try {
-
         // Extraer el nombre del State y el country_id
         const { name, country_id } = req.body
 
