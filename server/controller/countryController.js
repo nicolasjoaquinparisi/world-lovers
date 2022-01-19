@@ -1,6 +1,7 @@
 const Country = require('../model/Country')
 const { validationResult } = require('express-validator')
-const State = require('../model/State')
+const State = require('../model/State');
+const City = require('../model/City');
 
 // Crear nuevo país
 exports.createCountry = async (req, res) => {
@@ -36,7 +37,8 @@ exports.getCountries = async (req, res) => {
     try {
         const countries = await Country.findAll({
             attributes: { exclude: ['createdAt', 'updatedAt' ] },
-            include: { model: State, attributes: { exclude: ['createdAt', 'updatedAt', 'country_id'] } }
+            include: { model: State, attributes: { exclude: ['createdAt', 'updatedAt', 'country_id'] },
+            include: { model: City, attributes: { exclude: ['createdAt', 'updatedAt', 'state_id'] } } }
         })
 
         res.json({countries})

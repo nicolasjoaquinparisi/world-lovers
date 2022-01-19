@@ -25,13 +25,11 @@ exports.createCity = async (req, res) => {
         // Se determina si existe una ciudad con el mismo nombre
         const exists = await City.findOne( { where: { name: name } } )
         if (exists) {
-            return res.status(400).send(`There is a city with the name ${name}`)
+            return res.status(400).send(`The city with name ${name} is alredy exists`)
         }
 
         // Se crea la ciudad
-        const city = await City.create({name})
-        city.setState(state_id)
-        city.save()
+        await City.create({name, state_id})
 
         res.status(200).send(`New city added: ${name}`)
 

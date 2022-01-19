@@ -20,6 +20,7 @@ const PORT = process.env.PORT || 4000
 app.use('/api/countries', require('./routes/countries'))
 app.use('/api/states', require('./routes/states'))
 app.use('/api/cities', require('./routes/cities'))
+app.use('/api/paths', require('./routes/paths'))
 
 // Página principal
 app.get('/', (req, res) => {

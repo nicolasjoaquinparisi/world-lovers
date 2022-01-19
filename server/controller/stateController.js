@@ -24,13 +24,11 @@ exports.createState = async (req, res) => {
         // Se determina si existe un estado con el mismo nombre
         const exists = await State.findOne( { where: { name: name } } )
         if (exists) {
-            return res.status(400).send(`There is a state with the name ${name}`)
+            return res.status(400).send(`The state with name ${name} is alredy exists`)
         }
 
         // Se crea el estado
-        const state = await State.create({name})
-        state.setCountry(country_id)
-        state.save()
+        await State.create({name, country_id})
 
         res.status(200).send(`New state added: ${name}`)
 
