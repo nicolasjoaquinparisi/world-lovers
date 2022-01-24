@@ -19,8 +19,8 @@ const NavBar = () => {
                 Ofertas
             </Link>
 
-            <Link to='/offerts' className={styles.bottomNavLink}>
-                <svg style={{ color: "var(--color-gray-2)", width: 14 }} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" className={styles.linkIcon} role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"></path></svg>
+            <Link to='/' className={styles.bottomNavLink}>
+                <svg style={{ color: "var(--color-gray-2)", width: 22 }} aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ticket-alt" role="img" className={styles.linkIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M128 160h320v192H128V160zm400 96c0 26.51 21.49 48 48 48v96c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48v-96c26.51 0 48-21.49 48-48s-21.49-48-48-48v-96c0-26.51 21.49-48 48-48h480c26.51 0 48 21.49 48 48v96c-26.51 0-48 21.49-48 48zm-48-104c0-13.255-10.745-24-24-24H120c-13.255 0-24 10.745-24 24v208c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24V152z"></path></svg>
                 Actividades
             </Link>
         </nav>

@@ -1,10 +1,14 @@
-
 .bottomNav {
     align-items: center;
     display: flex;
     gap: 3rem;
-    justify-content: flex-start;
+    justify-content: center;
     padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .bottomNav {
+        justify-content: flex-start;
+    }
 }
 
 .bottomNavLink {

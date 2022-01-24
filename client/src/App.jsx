@@ -1,11 +1,11 @@
-import Index from "./components/routes/Index"
+import Home from "./components/routes/Home"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Index /> } />
+        <Route path='/' element={ <Home /> } />
       </Routes>
     </BrowserRouter>
   )

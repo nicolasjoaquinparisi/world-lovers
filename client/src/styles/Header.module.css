@@ -1,6 +1,7 @@
 .header {
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-gray-4);
+    width: 100%;
 }
 
 .container {
@@ -10,10 +11,17 @@
 }
 
 .topContainer {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    display: block;
+    padding: 1.5rem 0;
+}
+@media (min-width: 768px) {
+    .topContainer {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding: 0;
+    }   
 }
 
 .logo {
@@ -22,16 +30,28 @@
     font-weight: bold;
     text-decoration: none;
 }
+@media (min-width: 768px) {
+    .logo {
+        margin: 0;
+    }
+}
 
 .topNav {
     align-items: center;
     background-color: var(--color-gray-5);
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 2rem;
     display: flex;
     gap: 2rem;
     justify-content: center;
+    margin-top: 1rem;
     padding: 1.8rem;
-    width: 22%;
+}
+@media (min-width: 768px) {
+    .topNav {
+        border-radius: 0 0 2rem 2rem;
+        margin: 0;
+        width: 22%;
+    }
 }
 
 .link {
