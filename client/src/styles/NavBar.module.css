@@ -1,0 +1,24 @@
+
+.bottomNav {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+.bottomNavLink {
+    align-items: center;
+    color: var(--color-gray-2);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    gap: 1rem;
+    text-decoration: none;
+}
+.bottomNavLink:hover {
+    color: var(--color-red-2);
+}
+.bottomNavLink:hover .linkIcon {
+    color: var(--color-red-2)!important;
+}
