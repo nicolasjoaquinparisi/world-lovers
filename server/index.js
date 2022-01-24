@@ -1,5 +1,5 @@
 const express = require('express')
-const sequelize = require('./config/db')
+const sequelize = require('./utils/db')
 const cors = require('cors')
 
 // Se crea el servidor

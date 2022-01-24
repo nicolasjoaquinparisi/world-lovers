@@ -1,9 +1,13 @@
 .bottomNav {
     align-items: center;
+    border-bottom: 1px solid var(--color-gray-4);
     display: flex;
     gap: 3rem;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 120rem;
     padding-bottom: 1rem;
+    width: 95%;
 }
 @media (min-width: 768px) {
     .bottomNav {

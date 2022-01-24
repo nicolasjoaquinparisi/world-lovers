@@ -1,6 +1,6 @@
 const { Model } = require('sequelize')
 const Sequelize = require('sequelize')
-const sequelize = require('../config/db')
+const sequelize = require('../utils/db')
 const City = require('./City')
 
 // Path (1:1) - (0:n) City (Origen)

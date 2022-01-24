@@ -4,6 +4,7 @@ import piramides from '../../../img/pirámides-1.jpg'
 import coliseo from '../../../img/coliseo.jpg'
 import louvre from '../../../img/louvre-1.jpg'
 import machuPichu from '../../../img/machu-pichu.jpg'
+import chichenItza from '../../../img/chichen-itza.jpg'
 
 const SearchBar = () => {
 
@@ -11,11 +12,12 @@ const SearchBar = () => {
         0: piramides,
         1: coliseo,
         2: louvre,
-        3: machuPichu
+        3: machuPichu,
+        4: chichenItza
     }
 
     const getBackgroundImage = () => {
-        const index = Math.floor(Math.random() * 4)
+        const index = Math.floor(Math.random() * 5)
         return backgroundImages[index]
     }
 

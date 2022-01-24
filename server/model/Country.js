@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const sequelize = require('../config/db')
+const sequelize = require('../utils/db')
 
 // Country (0:n) - (0:1) State
 

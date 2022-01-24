@@ -1,6 +1,6 @@
 const { Model } = require('sequelize')
 const Sequelize = require('sequelize')
-const sequelize = require('../config/db')
+const sequelize = require('../utils/db')
 const Country = require('./Country')
 const State = require('./State')
 

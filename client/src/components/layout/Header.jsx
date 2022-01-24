@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import NavBar from './NavBar'
 import styles from '../../styles/Header.module.css'
 
 const Header = () => {
@@ -21,8 +20,6 @@ const Header = () => {
                         </Link>
                     </nav>
                 </div>
-
-                <NavBar />
             </div>
         </header>
     )
