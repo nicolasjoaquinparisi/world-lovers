@@ -1,12 +1,15 @@
 import Layout from '../layout/Layout'
-import SearchBar from "../layout/SearchBar"
+import SearchBarContainer from "../layout/SearchBarContainer"
+import SearchFlightBar from '../layout/SearchFlightBar'
 import NavBar from '../layout/NavBar'
 
 const Home = () => {
     return (
         <Layout>
             <NavBar />
-            <SearchBar />
+            <SearchBarContainer>
+                <SearchFlightBar/>
+            </SearchBarContainer>
         </Layout>
     )
 }

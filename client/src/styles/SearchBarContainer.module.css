@@ -1,0 +1,14 @@
+.container {
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    height: 35vh;
+    justify-content: center;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .container {
+        background-position: center;
+    }
+}
