@@ -1,17 +1,17 @@
 import Layout from '../layout/Layout'
 import SearchBarContainer from "../layout/SearchBarContainer"
-import SearchFlightBar from '../layout/SearchFlightBar'
+import SearchBarActivity from '../layout/SearchBarActivity'
 import NavBar from '../layout/NavBar'
 
-const Home = () => {
+const Activities = () => {
     return (
         <Layout>
-            <NavBar activeElement={'flights'} />
+            <NavBar activeElement={'activities'} />
             <SearchBarContainer>
-                <SearchFlightBar/>
+                <SearchBarActivity/>
             </SearchBarContainer>
         </Layout>
     )
 }
  
-export default Home
+export default Activities
