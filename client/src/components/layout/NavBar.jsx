@@ -9,7 +9,7 @@ const NavBar = ({activeElement}) => {
                 {
                     activeElement === 'hotels' ?
                     <div className={styles.iconContainer}>
-                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <line x1="3" y1="21" x2="21" y2="21" />
                             <path d="M5 21v-14l8 -4v18" />
@@ -21,7 +21,7 @@ const NavBar = ({activeElement}) => {
                         </svg>
                     </div>
                     :
-                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="3" y1="21" x2="21" y2="21" />
                         <path d="M5 21v-14l8 -4v18" />
@@ -40,13 +40,13 @@ const NavBar = ({activeElement}) => {
                 {
                     activeElement === 'flights' ?
                     <div className={styles.iconContainer}>
-                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
                         </svg>
                     </div>
                     :
-                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
                     </svg>
@@ -58,13 +58,13 @@ const NavBar = ({activeElement}) => {
                 {
                     activeElement === 'offerts' ?
                     <div className={styles.iconContainer}>
-                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
                         </svg>
                     </div>
                     :
-                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z" />
                     </svg>
@@ -76,7 +76,7 @@ const NavBar = ({activeElement}) => {
                 {
                     activeElement === 'activities' ?
                     <div className={styles.iconContainer}>
-                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg className={ styles.linkIconActive } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <line x1="15" y1="5" x2="15" y2="7" />
                             <line x1="15" y1="11" x2="15" y2="13" />
@@ -85,7 +85,7 @@ const NavBar = ({activeElement}) => {
                         </svg>
                     </div>
                     :
-                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg className={ styles.linkIcon } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="15" y1="5" x2="15" y2="7" />
                         <line x1="15" y1="11" x2="15" y2="13" />

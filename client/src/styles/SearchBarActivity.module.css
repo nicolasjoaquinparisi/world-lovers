@@ -1,30 +1,17 @@
-.container {
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    display: flex;
-    height: 35vh;
-    justify-content: center;
-    width: 100%;
-}
-@media (min-width: 768px) {
-    .container {
-        background-position: center;
-    }
-}
-
 .searchContainer {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 120rem;
     padding: 3rem;
-    width: 100%;
+    width: 95%;
 }
 @media (min-width: 768px) {
     .searchContainer {
         flex-direction: row;
         gap: 1.5rem;
         justify-content: space-between;
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -40,6 +27,7 @@
 @media (min-width: 768px) {
     .inputContainer {
         margin: 0;
+        width: 80%;
     }
 }
 
@@ -86,8 +74,19 @@
     .button {
         border-radius: 5rem;
         padding: 1rem 2rem;
+        width: 20%;
     }   
 }
 .button:hover {
     cursor: pointer;
+}
+
+.searchIcon {
+    margin: 0;
+    width: 1.5rem;
+}
+@media (min-width: 768px) {
+    .searchIcon {
+        width: 2.5rem;
+    }
 }

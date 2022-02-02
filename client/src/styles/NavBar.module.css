@@ -45,12 +45,12 @@
 
 .linkIcon {
     stroke: var(--color-gray-2);
-    width: 3.5rem;
+    width: 3rem;
 }
 .linkIconActive {
     stroke: var(--color-white);
     padding: 1rem;
-    width: 3.5rem;
+    width: 3rem;
 }
 
 .iconContainer {
